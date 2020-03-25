@@ -84,9 +84,7 @@ tplmap - https://github.com/epinna/tplmap
 
 davtest - https://github.com/cldrn/davtest
 
-### GraphQLmap
-https://github.com/swisskyrepo/GraphQLmap  
-GraphQLmap is a scripting engine to interact with a graphql endpoint for pentesting purposes.
+GraphQLmap - https://github.com/swisskyrepo/GraphQLmap  
 
 ## Reconnaissance
 
