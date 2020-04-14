@@ -487,6 +487,8 @@ teh_s3_bucketeers  - https://github.com/tomdev/teh_s3_bucketeers
 
 bucketeer - https://github.com/abhaybhargav/bucketeer
 
+scout - https://github.com/nccgroup/Scout2 
+
 # Other
 
 Social Engineer Toolkit - https://github.com/trustedsec/social-engineer-toolkit
