@@ -26,6 +26,10 @@ function methodologies () {
 	git clone  https://github.com/paradisperdu/ios-testing.wiki.git methodologies/paradisperdu/mobile/ios
 	git clone  https://github.com/paradisperdu/Infrastructure.wiki.git methodologies/paradisperdu/inf
 	echo '	[#] great success!'
+	echo 'downloading cyberchef'
+	mkdir -p cyberchef
+	wget -P cyberchef/ https://gchq.github.io/CyberChef/CyberChef_v9.20.3.zip
+
 }
 
 function wordlists () {
@@ -183,13 +187,42 @@ function cloud () {
 	popd
 }
 
+function social_engineering () {
+	mkdir social_engineering
+	echo 'installing SET'
+	pushd social_engineering
+	git clone https://github.com/trustedsec/social-engineer-toolkit/
+	pushd social-engineer-toolkit
+	python3 -m venv venv
+	. venv/bin/activate
+	echo 'installing requirements'
+	pip3 install -r requirements.txt
+	echo 'installing...'
+	python setup.py
+	deactivate
+	popd
+}
 
+function ssl () {
+	mkdir ssl
+	pushd ssl
+	echo 'installing ssl-cipher-enum' 
+	git clone https://github.com/portcullislabs/ssl-cipher-suite-enum.git
+	echo 'installing testssl.sh'
+	git clone --depth 1 https://github.com/drwetter/testssl.sh.git
+	echo 'installing sslyze'
+	git clone https://github.com/nabla-c0d3/sslyze.git
+	pusdh sslyze
+	python
+}
 #methodologies
 #wordlists
 #bruteforce
 #cracking
 #reverse_engineering
 #cloud
+social_engineering
+ssl
 
 popd
 	
