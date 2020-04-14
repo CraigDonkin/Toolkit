@@ -487,7 +487,7 @@ teh_s3_bucketeers  - https://github.com/tomdev/teh_s3_bucketeers
 
 bucketeer - https://github.com/abhaybhargav/bucketeer
 
-scout - https://github.com/nccgroup/Scout2 
+scoutSuite - https://github.com/nccgroup/ScoutSuite 
 
 # Other
 
