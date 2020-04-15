@@ -2,6 +2,8 @@
 
 echo 'WELCOME '
 echo 'LETS BEGIN'
+#checks to make sure git is installed
+apt install git 
 echo 'MAKING TOOLKIT FOLDER'
 mkdir toolkit
 echo '[=] pushd toolkit'
